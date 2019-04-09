@@ -7,13 +7,40 @@ if($ckeckemp){
 		 $stmt->bindparam(1,$_SESSION['id']);
 		 $stmt->execute();
          $data=$stmt->fetchall();
+         $count=$stmt->rowcount();
          //show the data in ui
      ?>
-      <ul class="list-group">
-         <?php foreach($data as $d):?>
-          <li class="list-group-item"><?php echo $d['names'] ?></li>
-         <?php endforeach;?> 
-      </ul>
+      <div class="container">
+       <h1 class="text-center text-info">My Orders</h1>
+      <table class="table table-bordered table-hover">
+        <tr>
+          <td>name</td>
+          <td>email</td>
+          <td>address</td>
+          <td>phone</td>
+          <td>date of order</td>
+        </tr>
+          <?php
+             if($count>0){?>
+                          <?php foreach($data as $d):?>
+          <tr>
+              <td><?php echo $d['names'] ?></td>
+              <td><?php echo $d['email'] ?></td>
+              <td><?php echo $d['locations'] ?></td>
+              <td><?php echo $d['phone'] ?></td>
+              <td><?php echo $d['create_at'] ?></td>
+          </tr>
+<?php endforeach; ?> 
+            <?php }
+             else{?>
+               <tr>
+                  <td colspan="4"><b class="text-danger">not have order</b></td>
+                 </tr>
+             
+             <?php }
+          ?>
+      </table>
+      </div>
  
     <?php
 }

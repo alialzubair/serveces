@@ -31,7 +31,7 @@
               <ul class="nav navbar-nav">
                   <li class="active"><a href="index.php">Dashbord</a></li>
                   <li><a href="members.php?do=manage">members</a></li>
-                  <li><a href="serves.php?do=manage">Serves</a></li>
+                  <li><a href="services.php?do=manage">services</a></li>
                   <li><a href="orders.php?do=manage">Orders</a></li>
 
               </ul>

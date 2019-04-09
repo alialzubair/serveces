@@ -26,7 +26,7 @@ if($do=='manage'){
       <div class="col-md-6">
      <?php foreach($data as $d): ?>     <div class="thumbnail">
              
-          <img src="1.jpeg" class="img-circle" alt="..." class="cricl" width="100%">
+          <img src="upload//<?php echo $d['img'] ?>" class="img-circle" alt="..." class="cricl" width="100%">
            <div class="caption">
             <h3><span class="text-danger">Name:</span> <?php echo $d['full_name'] ?></h3>
             <p><span class="text-danger">Email:</span> <?php echo $d['emali'] ?></p>

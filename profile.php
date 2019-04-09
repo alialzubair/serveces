@@ -147,9 +147,12 @@ include 'init.php';
           <div class="panel-body">
             <?php foreach($admin as $a):?>
               <div class="col-sm-6">
+              <?php
+               echo "<div><img src='upload/ ".$a['img']."' /></div>";
+              
+              ?>
                
-      <div  align="center"><img  src="upload/<?php echo $a['img'] ?>" class="img-circle img-responsive"> 
-    </div>
+
 
               <br>
               <!-- /input-group -->

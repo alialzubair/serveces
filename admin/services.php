@@ -20,7 +20,7 @@ if($do=='manage'){
     ?>
     <h1 class="text-success text-center">Show All Serves</h1>
     <div class="container">
-      <a href="serves.php?do=create" class="btn btn-info">Add Serves</a>
+      <a href="services.php?do=create" class="btn btn-info">Add Serves</a>
       <hr>
     <div class="table-responsive">
      <table class="table table-bordered table-hover">

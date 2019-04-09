@@ -29,9 +29,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="serves.php">serves</a></li>
+        <li><a href="services.php">services</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="connent.php">connect Us</a></li>
+        
          </ul>
       <?php
         if(isset($_SESSION['user'])){
